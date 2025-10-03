@@ -1,43 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Global Builders Academy"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Global Builders Academy</title>
+  <meta name="description" content="Community-driven initiative providing hands-on training, hackathons, and mentorship for builders in blockchain & Web3." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#6ee7b7;--muted:#9aa4b2;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system, sans-serif;margin:0;line-height:1.5;
+      background:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size:cover;color:#e6eef6;}
+    .overlay{background:rgba(15,23,36,0.8);min-height:100vh;}
+    .container{max-width:1000px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .logo{display:flex;gap:12px;align-items:center}
+    .brand-mark{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#052024;font-size:18px}
+    h1{font-size:28px;margin:0}
+    .sub{color:var(--muted);margin-top:4px}
+    .card{background:var(--card);padding:28px;border-radius:14px;box-shadow:0 6px 30px rgba(2,6,23,0.6);margin-top:22px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    @media(max-width:880px){.grid{grid-template-columns:1fr}.container{padding:16px;margin:20px}}
+    .hero p{margin:12px 0 18px;color:#d8e7f5}
+    ul.features{list-style:none;padding:0;margin:0}
+    ul.features li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
+    .muted{color:var(--muted);font-size:14px}
+    .cta{display:flex;gap:10px;margin-top:16px}
+    .btn{padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#60a5fa);color:#032024}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#dceefb}
+    .aside{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:10px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);font-size:13px;color:var(--muted);margin-right:8px}
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <header>
+        <div class="logo">
+          <div class="brand-mark">GBA</div>
+          <div>
+            <h1>Global Builders Academy</h1>
+            <div class="sub">Nurturing talent worldwide for blockchain & Web3</div>
+          </div>
+        </div>
+        <nav>
+          <button class="btn btn-ghost">Join</button>
+        </nav>
+      </header>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+      <main class="card grid">
+        <section class="hero">
+          <h2 style="margin-top:0">Community-driven learning, hands-on projects, real-world impact</h2>
+          <p>Global Builders Academy is a community-driven initiative dedicated to nurturing talent worldwide. We empower builders through hands-on training, hackathons, and mentorship, enabling them to innovate and create impactful solutions in blockchain and Web3.</p>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+          <div class="pill">🌍 Global Reach</div>
+          <div class="pill">⚒️ Hands-on Learning</div>
+          <div class="pill">🤝 Mentorship</div>
+          <div class="pill">🚀 Web3 Innovation</div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+          <div class="cta">
+            <button class="btn btn-primary">Get Involved</button>
+            <button class="btn btn-ghost">Learn More</button>
+          </div>
+
+          <section style="margin-top:18px">
+            <h3 style="margin:0 0 8px 0">What we offer</h3>
+            <ul class="features">
+              <li><strong>Hands-on training</strong> — Practical workshops, guided projects, and skill-building sessions.</li>
+              <li><strong>Hackathons</strong> — Regular events to prototype, build, and showcase solutions.</li>
+              <li><strong>Mentorship</strong> — Guidance from industry leaders and seasoned builders.</li>
+              <li><strong>Community support</strong> — Global peer network, channels, and office hours.</li>
+            </ul>
+          </section>
+        </section>
+
+        <aside class="aside">
+          <h4 style="margin-top:0">Quick mission & vision</h4>
+          <p class="muted">Our mission is to accelerate the careers of builders everywhere by providing accessible education, real-world experience, and a supportive network. Our vision is a global, diverse, and collaborative ecosystem where innovators build the next generation of decentralized applications.</p>
+
+          <div style="margin-top:12px">
+            <strong>For partners</strong>
+            <p class="muted" style="margin:6px 0 0">Partner with us for talent pipelines, sponsored hackathons, and curriculum development.</p>
+          </div>
+
+          <div style="margin-top:12px">
+            <strong>Community</strong>
+            <p class="muted" style="margin:6px 0 0">Join our channels for events, mentorship, and collaborations.</p>
+          </div>
+        </aside>
+      </main>
+
+      <footer>
+        © <span id="year"></span> Global Builders Academy • Built by the community
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
