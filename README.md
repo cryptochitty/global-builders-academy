@@ -72,4 +72,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # global-builders-academy
 Global Builders Academy is where innovators, creators, and entrepreneurs come together to learn, collaborate, and build projects that shape the future.
->>>>>>> d29dbb9e6fbfc63e32acc3f2180c93a6a55ab3fd
